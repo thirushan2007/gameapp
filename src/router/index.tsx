@@ -5,7 +5,7 @@ const MainRouter = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" Component={HomePage} />
+        <Route path="/gameapp" Component={HomePage} />
       </Routes>
     </div>
   );
