@@ -4,6 +4,8 @@ import {
   faHandBackFist,
   faHand,
   faHandScissors,
+  faBullseye,
+  faHeartBroken,
 } from "@fortawesome/free-solid-svg-icons";
 
 import rock from "../assets/rock.png";
@@ -45,9 +47,10 @@ const HomePage = () => {
     setuserScore(0);
     setuserchoice("");
     setcompchoice("");
+    setoverresult("");
   };
 
-  if (userScore + comscore > 5) {
+  if (userScore + comscore == 5) {
     reset();
     if (userScore > comscore) {
       setoverresult("User Won");
@@ -95,19 +98,15 @@ const HomePage = () => {
               </div>
               <div className="result-box">
                 <h2>RESULT:</h2>
-                <div className="choice-row">
+                <div className="choice">
                   <div>
                     <h4>Your Choice:</h4>
-                    {userchoice && (
-                      <img src={output(userchoice)} alt={userchoice} />
-                    )}
+                    {userchoice && <img src={output(userchoice)} />}
                   </div>
                   <h1>X</h1>
                   <div>
                     <h4>Computer Choice:</h4>
-                    {compchoice && (
-                      <img src={output(compchoice)} alt={compchoice} />
-                    )}
+                    {compchoice && <img src={output(compchoice)} />}
                   </div>
                 </div>
               </div>

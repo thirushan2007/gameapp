@@ -54,7 +54,7 @@ button label {
   transition: ease-in-out 0.2s;
   transform: scale(1.1);
   color: palegoldenrod;
-  border: 5px solid gold;
+  border: 5px solid burlywood;
 }
 
 .body-container {
@@ -67,14 +67,14 @@ button label {
   padding: 20px;
 }
 
-.choice-row {
+.choice {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.choice-row img {
+.choice img {
   width: 100px;
   height: 100px;
 }
@@ -86,10 +86,13 @@ button label {
 .overallresult{
     color: brown;
     font-size: 1.5rem;
+    font-weight:bold;
+    font-size: 2.5rem;
 }
 .div-container{
-    border: 5px solid rgb(206, 171, 105);
-    background-color: rgba(206, 171, 105, 0.855);
+    /* border: 5px solid rgb(206, 171, 105); */
+    /* background-color: rgba(206, 171, 105, 0.855); */
+    background-image: url('../assets/empty-save-texture-room-light_1258-175.avif');
     border-radius: 20px;
     padding: 10px;
 }
